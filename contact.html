@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Abhishek Chourasia</title>
+  <link rel="stylesheet" href="assets/styles/style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Page Section -->
+  <section id="contact-page">
+    <h2>Contact Me</h2>
+
+    <p>
+      You can reach out to me anytime via email at 
+      <strong>natecobusiness12@gmail.com</strong> or 
+      <strong>+91 9935891367</strong>.
+    </p>
+
+    <!-- UPDATED FORM WITH FORMSPREE ENDPOINT -->
+    <form
+      id="contactForm"
+      action="https://formspree.io/f/mannageo"
+      method="POST"
+    >
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        required
+      />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your Email"
+        required
+      />
+
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Write your message here..."
+        rows="6"
+        required
+      ></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      Connect with me on
+      <a href="https://www.linkedin.com/in/abhishekchourasia" target="_blank">
+        LinkedIn
+      </a>
+    </p>
+  </footer>
+
+  <!-- Optional JavaScript for front-end validation (see next step) -->
+  <script src="scripts/contact.js"></script>
+</body>
+</html>
